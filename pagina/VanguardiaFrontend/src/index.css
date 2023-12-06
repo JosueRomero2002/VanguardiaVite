@@ -1,0 +1,34 @@
+body {
+  background-image: url("./assets/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0; /* Remove default margin to ensure full coverage */
+  display: flex; /* Use flexbox to center content vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --primary: #0091ff;
+  --dark: #061b28;
+  --gray: #756388;
+  --light: #ffffff;
+}
+
+
+.container {
+  position: relative; /* asegura que los elementos dentro del contenedor se posicionen de manera relativa a este contenedor */
+}
+
+.content {
+  position: absolute; /* asegura que los elementos dentro de "content" se posicionen de manera absoluta dentro del contenedor "container" */
+  top: 50%; /* posiciona el elemento en la mitad superior del contenedor */
+  left: 50%; /* posiciona el elemento en el centro horizontal del contenedor */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* centra el elemento tanto vertical como horizontalmente */
+}

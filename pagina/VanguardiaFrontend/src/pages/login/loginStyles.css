@@ -1,0 +1,21 @@
+.floating-image {
+    animation: floatAnimation 5s infinite ease-in-out; /* Adjust the animation duration (5s) and timing function as desired */
+width: 20%;  
+height: 20%; 
+position: relative;
+}
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(
+        -70px
+      ); /* Adjust the vertical translation value (-10px) */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
